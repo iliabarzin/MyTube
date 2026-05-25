@@ -46,8 +46,10 @@ jobs:
 
           mkdir -p videos
 
-          echo "# سلام" > videos/README.md
-          echo "هنوز هیچ ویدیویی اینجا نیست" >> videos/README.md
+          echo "# درود بر شما" > videos/README.md
+          echo "**هنوز هیچ ویدیویی دانلود نکردید!**" >> videos/README.md
+          echo "میتونید در *تب Actions* از قابلیت **دانلود ویدیو یوتوب** استفاده کنید!" >> videos/README.md
+          echo "بعد از دانلود **لینک پیمایش به هر ویدیو** در اینجا لیست میشود!" >> videos/README.md
           echo "" >> videos/README.md
           echo "---" >> videos/README.md
 
@@ -74,8 +76,10 @@ jobs:
                 git reset --hard origin/"$BRANCH"
                 rm -rf videos
                 mkdir -p videos
-                echo "# سلام" > videos/README.md
-                echo "هنوز هیچ ویدیویی اینجا نیست" >> videos/README.md
+                echo "# درود بر شما" > videos/README.md
+                echo "**هنوز هیچ ویدیویی دانلود نکردید!**" >> videos/README.md
+                echo "میتونید در *تب Actions* از قابلیت **دانلود ویدیو یوتوب** استفاده کنید!" >> videos/README.md
+                echo "بعد از دانلود **لینک پیمایش به هر ویدیو** در اینجا لیست میشود!" >> videos/README.md
                 echo "" >> videos/README.md
                 echo "---" >> videos/README.md
                 git add -f videos/
