@@ -681,7 +681,7 @@ jobs:
 
             if [ ! -f "videos/README.md" ]; then
               {
-                echo "# DOWNLOADED VIDEOS LIST :"
+                echo "# DOWNLOADED VIDEOS LIST INDEX:"
                 echo ""
                 echo "----"
                 echo ""
@@ -718,7 +718,7 @@ jobs:
 
           regenerate_master_readme() {
             MASTER_README="videos/README.md"
-            { echo "# DOWNLOADED VIDEOS LIST :"; echo ""; echo "----"; echo ""; } > "$MASTER_README"
+            { echo "# DOWNLOADED VIDEOS LIST INDEX:"; echo ""; echo "----"; echo ""; } > "$MASTER_README"
             NUM=0
             for folder in videos/*/; do
               [ -d "$folder" ] || continue
