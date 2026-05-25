@@ -1,19 +1,19 @@
-name: 01 - 🎯 دانلود یوتیوب
+name: 01 - 🛟 دانلود ویدیو یوتیوب
 
 on:
   workflow_dispatch:
     inputs:
       video_urls:
-        description: '🔗 لینک ویدیو ( چند لینک با فاصله )'
+        description: '🔗 لینک ویدیو ( جداسازی با فاصله )'
         required: true
         type: string
       download_subtitles:
-        description: '📝 زیرنویس ( فارسی و انگلیسی )'
+        description: '⌨️ زیرنویس ( فارسی و انگلیسی )'
         required: false
         default: false
         type: boolean
       quality:
-        description: '🎬 کیفیت و نوع'
+        description: '🎬 کیفیت'
         required: false
         default: 'best'
         type: choice
@@ -610,7 +610,7 @@ jobs:
                     printf '%s\n' ""
                     printf '%s\n' "---"
                     printf '%s\n' ""
-                    printf '%s\n' "## 🔤 Subtitles"
+                    printf '%s\n' "## ⌨️ Subtitles"
                     printf '%s\n' ""
                     printf '%s\n' "| # | File | Link |"
                     printf '%s\n' "|---|------|------|"
